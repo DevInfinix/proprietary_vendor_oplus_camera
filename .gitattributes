@@ -1,0 +1,2 @@
+OplusCamera.apk filter=lfs diff=lfs merge=lfs -text
+libarcsoft*.so filter=lfs diff=lfs merge=lfs -text
