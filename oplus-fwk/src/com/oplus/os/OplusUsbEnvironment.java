@@ -47,7 +47,7 @@ public class OplusUsbEnvironment extends Environment {
 
     public static String getExternalSdState(Context context) {
         String path;
-        final StorageManager sm = (StorageManager) context.getSystemService("storage");
+        final StorageManager sm = context.getSystemService(StorageManager.class);
         synchronized (sLock) {
             update(context);
             path = sExternalSdDir;
@@ -57,6 +57,7 @@ public class OplusUsbEnvironment extends Environment {
         }
         return sm.getVolumeState(path);
     }
+
 
     public static String getExternalPath(Context context) {
         String path;
@@ -81,7 +82,7 @@ public class OplusUsbEnvironment extends Environment {
 
     public static String getInternalSdState(Context context) {
         String path;
-        final StorageManager sm = (StorageManager) context.getSystemService("storage");
+        final StorageManager sm = context.getSystemService(StorageManager.class);
         synchronized (sLock) {
             update(context);
             path = sInternalSdDir;
@@ -91,6 +92,7 @@ public class OplusUsbEnvironment extends Environment {
         }
         return sm.getVolumeState(path);
     }
+
 
     public static String getInternalPath(Context context) {
         String path;
@@ -147,7 +149,7 @@ public class OplusUsbEnvironment extends Environment {
         synchronized (sLock) {
             update(context);
         }
-        final StorageManager sm = (StorageManager) context.getSystemService("storage");
+        final StorageManager sm = context.getSystemService(StorageManager.class);
         if (path == null || sm == null) {
             return false;
         }

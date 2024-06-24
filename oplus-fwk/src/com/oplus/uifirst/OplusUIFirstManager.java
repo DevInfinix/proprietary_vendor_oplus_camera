@@ -11,6 +11,5 @@ public class OplusUIFirstManager {
         return sOplusUIFirstManager;
     }
 
-    public void setUxThreadValue(int pid, int tid, String value) {
-    }
+    public void setUxThreadValue(int pid, int tid, String value) {}
 }

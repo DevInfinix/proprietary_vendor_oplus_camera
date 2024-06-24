@@ -3,15 +3,16 @@ package com.oplus.wrapper.os;
 import android.os.IBinder;
 
 public class ServiceManager {
-  public static void addService(String paramString, IBinder paramIBinder) {
-    android.os.ServiceManager.addService(paramString, paramIBinder);
-  }
-  
-  public static IBinder checkService(String paramString) {
-    return android.os.ServiceManager.checkService(paramString);
-  }
-  
-  public static IBinder getService(String paramString) {
-    return android.os.ServiceManager.getService(paramString);
-  }
+
+    public static IBinder checkService(String name) {
+        return android.os.ServiceManager.checkService(name);
+    }
+
+    public static IBinder getService(String name) {
+        return android.os.ServiceManager.getService(name);
+    }
+
+    public static void addService(String name, IBinder token) {
+        android.os.ServiceManager.addService(name, token);
+    }
 }

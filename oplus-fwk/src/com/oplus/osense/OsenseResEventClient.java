@@ -2,18 +2,11 @@ package com.oplus.osense;
 
 public class OsenseResEventClient {
 
-    private static volatile OsenseResEventClient sInstance;
-
-    private OsenseResEventClient() {
-    }
+    private static OsenseResEventClient sInstance;
 
     public static OsenseResEventClient getInstance() {
         if (sInstance == null) {
-            synchronized (OsenseResEventClient.class) {
-                if (sInstance == null) {
-                    sInstance = new OsenseResEventClient();
-                }
-            }
+            sInstance = new OsenseResEventClient();
         }
         return sInstance;
     }
