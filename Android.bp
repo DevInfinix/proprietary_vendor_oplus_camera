@@ -23,7 +23,7 @@ android_app_import {
 	name: "OplusCamera",
 	owner: "oplus",
 	apk: "proprietary/system_ext/priv-app/OplusCamera/OplusCamera.apk",
-	overrides: ["Camera2", "GoogleCameraGo"],
+	overrides: ["Camera2", "GoogleCameraGo", "Aperture"],
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
