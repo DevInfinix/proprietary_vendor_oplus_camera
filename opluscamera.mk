@@ -3,11 +3,8 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.common-V3-ndk.vendor
 
 # Framework
-PRODUCT_PACKAGES += \
-    oplus-fwk
 
 PRODUCT_BOOT_JARS += \
-    oplus-fwk \
     oplus-support-wrapper
 
 # Frameworks
