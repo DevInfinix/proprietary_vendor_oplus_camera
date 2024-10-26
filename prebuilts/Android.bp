@@ -8,6 +8,7 @@ android_app_import {
 	owner: "OnePlus",
 	apk: "OnePlusGallery.apk",
 	overrides: ["Photos","Gallery2","Glimpse"],
+	preprocessed: true,
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
